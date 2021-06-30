@@ -1,0 +1,32 @@
+.header {
+  display: grid;
+  grid-column: span 13;
+  background-color: transparent;
+  font-weight: 1000;
+
+  & > div {
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+
+    &:not(:first-child):hover {
+      text-decoration: underline;
+    }
+  }
+
+  .logo-header {
+    grid-column: 1;
+  }
+
+  .about-header {
+    grid-column: 9;
+  }
+
+  .projects-header {
+    grid-column: 10;
+  }
+
+  .contacts-header {
+    grid-column: 11;
+  }
+}

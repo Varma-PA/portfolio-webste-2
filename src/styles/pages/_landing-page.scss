@@ -1,0 +1,23 @@
+.landing-page {
+  display: grid;
+  grid-column: span 13;
+
+  .first-section {
+    display: grid;
+    grid-column: span 13;
+
+    .photo-area {
+      grid-column: 1/5;
+      height: 100vw;
+      width: 100%;
+      background-color: white;
+    }
+
+    .purple-box {
+      grid-column: 5/13;
+      height: 100vw;
+      width: 100%;
+      background-color: #4c06a4;
+    }
+  }
+}

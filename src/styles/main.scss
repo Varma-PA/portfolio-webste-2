@@ -4,7 +4,11 @@
 
 @import "./base/animations";
 @import "./base/base";
+@import "./base/change-colours";
 @import "./base/typography";
-@import "./base/main-grid";
 
 @import "./components/header";
+
+@import "./layouts/main-grid";
+
+@import "./pages/landing-page";

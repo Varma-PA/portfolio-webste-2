@@ -1,11 +1,19 @@
 import React from "react";
+import { connect } from "react-redux";
 
-const Home = () => {
+export const LandingPage = (props: any) => {
   return (
-    <div>
-      <h2>Hello There</h2>
+    <div className="landing-page">
+      <div className="first-section">
+        <div className="photo-area"></div>
+        <div className="purple-box"></div>
+      </div>
     </div>
   );
 };
 
-export default Home;
+const mapStateToProps = (state: any) => ({ ...state.changeColour });
+
+const mapDispatchToProps = (dispatch: any) => {};
+
+export default connect(mapStateToProps, mapDispatchToProps)(LandingPage);

@@ -1,21 +1,29 @@
 .header {
   display: grid;
   grid-column: span 13;
-  background-color: transparent;
+  //   background-color: transparent;
   font-weight: 1000;
+  position: absolute;
+  width: 100%;
 
   & > div {
     padding: 10px;
     cursor: pointer;
     text-align: center;
+    font-size: 18px;
 
     &:not(:first-child):hover {
       text-decoration: underline;
     }
   }
 
+  .empty-clickable-area {
+    grid-column: 2/9;
+  }
+
   .logo-header {
     grid-column: 1;
+    color: black;
   }
 
   .about-header {

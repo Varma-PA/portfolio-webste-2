@@ -1,10 +1,10 @@
 .header {
   display: grid;
   grid-column: span 13;
-  //   background-color: transparent;
   font-weight: 1000;
   position: absolute;
   width: 100%;
+  background-color: transparent;
 
   & > div {
     padding: 10px;
@@ -37,4 +37,9 @@
   .contacts-header {
     grid-column: 11;
   }
+}
+
+.font-white {
+  color: white;
+  transition: 0.5s linear;
 }
